@@ -27,7 +27,7 @@ export default function Navbar() {
 return <div className='mb-24'>
   
 <nav className='bg-[#F8F9FA] py-4 fixed top-0 left-0 right-0 z-20'>
-  <div className="w-[80%] m-auto flex">
+  <div className="w-[95%] md:w-[80%] m-auto flex">
       <Link to={'/'} className="logo">
       <img src={Logo} alt="Fresh Cart Logo" />
       </Link>

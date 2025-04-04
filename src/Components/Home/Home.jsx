@@ -16,9 +16,9 @@ export default function Home() {
 const {allCat,catLoading} = useCategories()
 const {data,isLoading} = useProducts()
   return <>
-<div className="grid grid-cols-12 w-[100%] md:grid-cols-6 md:w-1/2 m-auto mb-4">
+<div className="grid grid-cols-12 w-[100%] md:grid-cols-6 md:w-1/2 m-auto mb-4 ">
 
-  <div className="col-span-8 md:col-span-4">
+  <div className="col-span-8 md:col-span-4 hidden md:block">
   <Swiper slidesPerView={1} loop={true} style={{height:"100%"}}>
     <SwiperSlide>
       <img className='w-full h-full block' src={Slider1} alt="" />
@@ -29,7 +29,7 @@ const {data,isLoading} = useProducts()
   </Swiper>
   </div>
 
-  <div className="col-span-4 md:col-span-2">
+  <div className="col-span-4 md:col-span-2 hidden md:block">
     <img src={Blog1} className='h-1/2' alt="" />
     <img src={Blog2} className='h-1/2' alt="" />
   </div>
@@ -52,7 +52,7 @@ const {data,isLoading} = useProducts()
     </SwiperSlide>
   })}
 </Swiper>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-[80%] m-auto">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-[90%]  m-auto">
   {data?.data.data.map((prod)=>{return <ProductCard product = {prod} key={prod._id}/>})}
   </div>
 

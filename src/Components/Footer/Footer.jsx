@@ -13,7 +13,7 @@ export default function Footer() {
 
 
   return <div className='bg-[#F8F9FA] pt-8 pb-12 mt-5'>
-    <div className='w-[80%] m-auto'>
+    <div className='w-[95%] md:w-[80%] m-auto'>
       <div className=''>
          <h2 className='text-2xl'>Get the FreshCart app</h2>
          <p className='text-gray-500 my-3'>We will send you a link, open it on your phone to download the app.</p>
