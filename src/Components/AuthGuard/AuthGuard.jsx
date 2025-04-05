@@ -1,9 +1,7 @@
-import React from 'react'
-import { Navigate } from 'react-router-dom'
+import React from "react";
+import { Navigate } from "react-router-dom";
 
-export default function AuthGuard({children}) {
-  const token = localStorage.getItem('token')
-  return <>
-  {token?<Navigate to='/'/> :children}
-  </>
+export default function AuthGuard({ children }) {
+  const token = localStorage.getItem("token");
+  return <>{token ? <Navigate to="/" /> : children}</>;
 }
